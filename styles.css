@@ -1,0 +1,138 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
+@-webkit-viewport {
+  width: device-width; }
+@-moz-viewport {
+  width: device-width; }
+@-ms-viewport {
+  width: device-width; }
+@-o-viewport {
+  width: device-width; }
+@viewport {
+  width: device-width; }
+
+body {
+  
+   }
+  
+.phone {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px; }
+
+.slider-list {
+  width: 240px;
+  padding: 0;
+  list-style: none;
+  max-width: 100%;
+  position: relative; }
+  @media screen and (min-width: 460px) {
+    .slider-list {
+      width: 350px; } }
+  @media screen and (min-width: 768px) {
+    .slider-list {
+      width: 450px; } }
+  @media screen and (min-width: 1024px) {
+    .slider-list {
+      width: 560px; } }
+
+.slide {
+  top: 225px;
+  position: absolute;
+}
+  .slide img {
+   min-height: 300;
+max-width: 300;
+min-width: 300;
+left: 100px;
+position: absolute;
+max-height: 300;
+
+}
+
+  
+  .agree {
+    border-radius: 62px;
+top: 665px;
+position: absolute;
+left: 274px;
+height: 125;
+width: 125;
+-webkit-transition: background-color 400;
+       }
+.agree:hover {
+-webkit-transition: background-color 400;
+background-color: rgba(0, 128, 0, 0.18);
+ }
+ .agree:active{
+-webkit-transition: background-color 400;
+background-color: rgba(0, 128, 0, 0.35);
+ }
+  
+a.disagree {
+border-radius: 62px;
+top: 665px;
+position: absolute;
+height: 125;
+width: 125;
+left: 115px;
+-webkit-transition: background-color 400;
+      }
+.disagree:hover {
+background-color: rgba(255, 0, 0, 0.18);
+-webkit-transition: background-color 400;
+   }
+
+.disagree:active{
+background-color: rgba(255, 0, 0, 0.18);
+-webkit-transition: background-color 400;
+background-color: rgba(255, 0, 0, 0.35);
+ }
+  
+.disagree-icon{
+    display:none;
+  font-family: Comic Sans MS;
+  left: 125px;
+width: 110;
+top: 280px;
+font-size: 18;
+border-width: 5px;
+border-color:black;
+background-color: white;
+border-radius: 12;
+padding: 10;
+z-index: 616;
+-webkit-transform: rotate(-10deg);
+position: absolute;
+  color:black;
+}
+.dIconactive, .disagree-icon:active{
+visibility:visible; 
+transition: opacity 1s;
+opacity:1;
+}
+
+.agree-icon{
+  display:none;
+  width:110px;
+  font-family:Comic Sans MS;
+  left: 280px;
+  top: 280;
+  font-size: 18;
+  border-width: 5px;
+  border-color:rgb(254, 213, 79);
+  background-color: white;
+  border-radius: 12;
+  padding: 10;
+  z-index: 616;
+  -webkit-transform: rotate(10deg);
+  position: absolute;
+  color:rgb(254, 213, 79);
+}
+.aIconactive, .agree-icon:active{
+visibility:visible; 
+transition: opacity 1s;
+opacity:1;
+}
+  
+
