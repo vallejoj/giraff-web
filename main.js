@@ -60,7 +60,12 @@ function handleHammer(event) {
         if ((Math.abs(event.gesture.deltaX) > 50) && (Math.abs(cardDir) > 0)) {
             //horizontal swipe
             cardSwipe(cardDir,0);            
-        }  else {
+        }     
+        //   else if (event.gesture.deltaY > 50) {
+        //     //vertical swipe
+        //     cardSwipe(cardDir,1);
+        // } 
+        else {
             //return card to original position if moved less than 50 pixels
             card.animate({
                 left: 0,
@@ -90,7 +95,7 @@ function cardSwipe(cardDir,skipFlag) {
   if (skipFlag==0){
     hrzDir = (cardDir == 1) ? "+=100px" : "-=100px";
     cardColor=(cardDir == 1) ? ui_colors.right :  ui_colors.left;    
-        hrdDir=(cardDir == 1) ?  $(".agree-icon").fadeToggle('fast').fadeToggle('fast'):$(".disagree-icon").fadeToggle('fast').fadeToggle('fast');        
+        hrdDir=(cardDir == 1) ?  $(".agree-icon").fadeToggle('slow').fadeToggle('slow'):$(".disagree-icon").fadeToggle('slow').fadeToggle('slow');        
   }else{
     vertDir="+=200px";
   };
