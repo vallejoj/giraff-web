@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  
 var ui_colors = {
     left: '#210588',
     right: '#009536',
